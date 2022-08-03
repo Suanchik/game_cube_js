@@ -1,0 +1,270 @@
+body {
+    background-color: rgb(85, 85, 85);
+    background-image: url('./assets/kubiki.jpeg');
+  }
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 800px;
+    backdrop-filter: blur(3px);
+  }
+  
+  .end {
+    display: none;
+    height: 485px;
+    width: 368px;
+    background-color: rgb(211, 211, 211);
+    word-wrap: break-word;
+    overflow: hidden;
+    box-shadow: 0 0 0px 2px rgba(88, 88, 88, 0.6);
+    border-radius: 4px;
+    padding: 0 1px 0 1px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .end .record_num, .your_record_num {
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 50px;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0.8px black;
+    border-radius: 2px;
+    border: none
+  }
+  
+  button:hover {
+    background-color: #fff;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  h2 {
+    margin-top: 100px;
+    font-size: 40px;
+    opacity: 0.2;
+  }
+  
+  .your_record_num {
+    background-color: orange;
+    color: #fff;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+  }
+  
+  .record_num {
+    background-color: rgb(122, 80, 0);
+    color: #fff;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+  }
+  
+  .general_block {
+    display: flex;
+    height: 485px;
+    width: 368px;
+    background-color: rgb(91, 101, 117);
+    word-wrap: break-word;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 0 1px 0 1px;
+    box-shadow: 0 0 0px 2px rgb(255, 255, 255, 0.6);
+  }
+  
+  .blocks_container {
+    display: flex;
+    background-color: rgb(54, 56, 78);
+    width: 60px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 0.5px 0 0;
+  }
+  
+  .blocks_container:hover {
+    background-color: rgb(73, 83, 99);
+  }
+  
+  .cube {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 55px;
+    width: 55px;
+    border-radius: 3px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 0 3px 0 red;
+    background-color: rgb(255, 0, 0);
+  }
+  
+  .gifka {
+    margin-top: 5px;
+    max-height: 55px;
+    width: 55px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 95, 193);
+    width: 374px;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    box-shadow: 0 0 0px 2px rgb(255, 255, 255, 0.6);
+  }
+  
+  .left {
+    margin-left: -122px;
+    z-index: 1;
+    transition: all ease 0.5s;
+  }
+  
+  .right {
+    margin-right: -122px;
+    z-index: 1;
+    transition: all ease 0.5s;
+  }
+  
+  .top {
+    position: relative;
+    margin-top: 65px;
+    z-index: 1;
+    transition: margin-top ease 0.5s;
+  }
+  
+  .bot {
+    margin-top: -55px;
+    z-index: 1;
+    transition: all ease 0.5s;
+  }
+  
+  .fixed {
+    margin-top: -55px;
+    z-index: 2;
+    transition: all ease 0.5s;
+  }
+  
+  .num15 {
+    box-shadow: 0 0 3px 0 grey;
+    background-color: grey;
+  }
+  
+  .num10 {
+    box-shadow: 0 0 3px 0 rgb(243, 132, 225);
+    background-color: rgb(243, 132, 225);
+  }
+  
+  .num20 {
+    box-shadow: 0 0 3px 0 rgb(73, 192, 136);
+    background-color: rgb(73, 192, 136);
+  }
+  
+  .num30 {
+    box-shadow: 0 0 3px 0 aqua;
+    background-color: aqua;
+  }
+  
+  .num320 {
+    box-shadow: 0 0 3px 0 rgb(255, 65, 65);
+    background-color: rgb(255, 65, 65);
+    color: #fff;
+  }
+  
+  .num640 {
+    box-shadow: 0 0 3px 0 rgb(201, 0, 100);
+    background-color: rgb(201, 0, 100);
+    color: rgb(255, 255, 255);
+  }
+  
+  .num60 {
+    box-shadow: 0 0 3px 0 yellowgreen;
+    background-color: yellowgreen;
+  }
+  
+  .num40 {
+    box-shadow: 0 0 3px 0 rgb(223, 200, 0);
+    background-color: rgb(223, 200, 0);
+  }
+  
+  .num80 {
+    box-shadow: 0 0 3px 0 rgb(86, 110, 243);
+    background-color: rgb(86, 110, 243);
+    color: beige;
+  }
+  
+  .num5 {
+    box-shadow: 0 0 3px 0 rgb(255, 255, 110);
+    background-color: rgb(255, 255, 110);
+  }
+  
+  .num60 {
+    box-shadow: 0 0 3px 0 rgb(95, 253, 161);
+    background-color: rgb(95, 253, 161);
+    }
+  
+  .num120 {
+    box-shadow: 0 0 3px 0 rgb(0, 223, 167);
+    background-color: rgb(0, 223, 167);
+  }
+  
+  .num240 {
+    box-shadow: 0 0 3px 0 brown;
+    background-color: brown;
+  }
+  
+  .num160 {
+    box-shadow: 0 0 3px 0 rgb(221, 126, 3);
+    background-color:rgb(221, 126, 3);
+  }
+  
+  .num25 {
+    box-shadow: 0 0 3px 0 rgb(255, 125, 179);
+    background-color: rgb(255, 125, 179);
+  }
+  
+  .num240 {
+    box-shadow: 0 0 3px 0 rgb(247, 252, 255);
+    background-color: rgb(225, 244, 255);
+    color: black;
+  }
+  
+  .newCubeBlock {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .newCube {
+    box-shadow: 0 0 0 2px white;
+    border-radius: 3px;
+    margin-left: 1px;
+  }
+  
+  .AddingCube {
+    margin-top: 50%;
+  }
+  
+  .AddingCube2 {
+    margin-top: 5px;
+    transition: margin-top ease 0.5s;
+  }
